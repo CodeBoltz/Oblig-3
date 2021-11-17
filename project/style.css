@@ -36,6 +36,7 @@ h1, h2, h3 {
     h2 {
         font-size: 2.2rem;
         margin-bottom: 1rem;
+        font-weight: 800;
     }
 
 /* css code for navigation bar */
@@ -101,7 +102,7 @@ main {
 }
 
 main > div{
-    margin: 2rem 0 0 0;
+    margin: 0 0 2rem 0;
 }
 
 main div > img{
@@ -120,10 +121,14 @@ main div > img{
     max-width: 100%;
     padding: 1rem;
 }
-/* switching maring of first explanation step for layout purpose */
+/* switching maring of first explanation step for layout purpose
  main > div:nth-child(3){
     margin: 1rem 0 0 0;
-}
+} */
+
+/* css code about page */
+
+/* css code contact page */
 
 /* footer */
 footer {
