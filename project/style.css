@@ -35,7 +35,8 @@ h1, h2, h3 {
 
     h2 {
         font-size: 2.2rem;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
+        font-weight: 800;
     }
 
 /* css code for navigation bar */
@@ -92,6 +93,8 @@ header > h1{
 main {
     width:85vw;
     margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
     text-align: left;
     justify-content: center;
     left: 0;
@@ -99,15 +102,33 @@ main {
 }
 
 main > div{
-    margin: 2rem 0 2rem 0;
+    margin: 0 0 2rem 0;
 }
 
-main > img{
-    display: flex;
-    justify-content: center;
+main div > img{
     max-width: 100%;
-
 }
+
+/* css code game page */
+.game-explanation{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.game-explanation img{
+    max-width: 100%;
+    padding: 1rem;
+}
+/* switching maring of first explanation step for layout purpose
+ main > div:nth-child(3){
+    margin: 1rem 0 0 0;
+} */
+
+/* css code about page */
+
+/* css code contact page */
 
 /* footer */
 footer {
@@ -130,7 +151,10 @@ footer > div{
     text-align: center;
 }
 
-
+.mapWrapper iframe {
+    max-width: 80vh;
+    max-height: auto;
+}
 footer > * {
     margin: 0 auto;
 }
@@ -144,6 +168,5 @@ footer > * {
 
     footer {
         flex-flow: column nowrap;
-
     }
 }
