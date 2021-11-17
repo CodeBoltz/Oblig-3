@@ -1,0 +1,149 @@
+/* importing font */
+@font-face {
+    font-family: lato;
+    src: url('./assets/fonts/lato');
+}
+
+@font-face {
+    font-family: openSans;
+    src: url('./assets/fonts/openSans');
+}
+
+/* css code for screen size < 600px*/
+/* general css */
+html {
+    font-size: 14px;
+}
+
+*{
+    margin: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.4em;
+}
+
+h1, h2, h3 {
+        font-family: 'openSans-Bold', sans-serif;
+    }
+
+    h1 {
+        font-size: 4rem;
+        margin-bottom: 2rem;
+    }
+
+    h2 {
+        font-size: 2.2rem;
+        margin-bottom: 2rem;
+    }
+
+/* css code for navigation bar */
+nav {
+    margin: 1rem ;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  nav li {
+    float: right;
+    list-style-type: none;
+  }
+  
+  nav li a {
+    font-family: 'openSans', sans-serif;
+    font-weight: bold;
+    display: block;
+    color: #282828;
+    text-align: center;
+    text-decoration: none;
+    padding: 2rem 2rem;
+  }
+  
+  li a:hover:not(.active) {
+    color: rgb(32, 158, 49);
+    text-decoration:underline #282828;
+  }
+
+/* css code header  */
+header {
+    width: 85vw;
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    
+    }
+
+header > h1{
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 900;
+}
+
+/* css code main */
+main {
+    width:85vw;
+    margin: 2rem auto;
+    text-align: left;
+    justify-content: center;
+    left: 0;
+    right: 0;
+}
+
+main > div{
+    margin: 2rem 0 2rem 0;
+}
+
+main > img{
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+
+}
+
+/* footer */
+footer {
+    background-color: rgb(32, 158, 49);
+    max-width: 100%;
+    margin: auto;
+    color: #ffff;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+footer > img{
+    width: 70%;
+    height: auto;
+    padding: 2rem;
+}
+footer > div{
+    padding: 0 2rem 2rem 2rem;
+    text-align: center;
+}
+
+
+footer > * {
+    margin: 0 auto;
+}
+
+/* css code for screens 600px and bigger */
+@media screen and (min-width: 600px) {
+    /* general css rulese */
+    html {
+        font-size: 24px;
+    }
+
+    footer {
+        flex-flow: column nowrap;
+
+    }
+}
