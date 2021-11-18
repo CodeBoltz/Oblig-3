@@ -122,10 +122,6 @@ main div > img{
     max-width: 100%;
     padding: 1rem;
 }
-/* switching maring of first explanation step for layout purpose
- main > div:nth-child(3){
-    margin: 1rem 0 0 0;
-} */
 
 /* css code about page */
 
@@ -216,10 +212,11 @@ footer > * {
         width: 80vw;
     }
 
-    article {
-        padding-top: 0;
+    footer{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
     }
-
 }
 /* css code for screens 960px and bigger */
 @media screen and (min-width: 960px) {
@@ -230,13 +227,14 @@ footer > * {
     }
 
     header, main{
-        width: 75vw;
+        width: 70vw;
     }
 
     /* css code game page */
-    .game-main{
+    .game-explanation{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: wrap;
+        flex: 2;
     }
 }
