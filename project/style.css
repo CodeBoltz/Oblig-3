@@ -80,7 +80,6 @@ header {
     margin: auto;
     display: flex;
     justify-content: center;
-    
     }
 
 header > h1{
@@ -92,7 +91,7 @@ header > h1{
 /* css code main */
 main {
     width:85vw;
-    margin: 2rem auto;
+    margin: 0 auto 2rem auto;
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -108,6 +107,7 @@ main > div{
 main div > img{
     max-width: 100%;
     padding-bottom: 1rem;
+    object-fit: contain;
 }
 
 /* css code game page */
@@ -166,6 +166,7 @@ main form > input[type=submit] {
     border: none;
     border-radius: 0.3rem;
     cursor: pointer;
+    font-weight: 900;
   }
 
 /* changing color of button when hovered */
@@ -185,7 +186,8 @@ footer {
 }
 
 footer > img{
-    width: 70%;
+    width: 100%;
+    max-width: 20vh;
     height: auto;
     padding: 2rem;
 }
@@ -202,14 +204,39 @@ footer > * {
     margin: 0 auto;
 }
 
-/* css code for screens 600px and bigger */
+/* css code for screens 600px and bigger*/
 @media screen and (min-width: 600px) {
+
+    /* general css rules */
+    html {
+        font-size: 16px;
+    }
+
+    header, main{
+        width: 80vw;
+    }
+
+    article {
+        padding-top: 0;
+    }
+
+}
+/* css code for screens 960px and bigger */
+@media screen and (min-width: 960px) {
+    
     /* general css rulese */
     html {
         font-size: 24px;
     }
 
-    footer {
-        flex-flow: column nowrap;
+    header, main{
+        width: 75vw;
+    }
+
+    /* css code game page */
+    .game-main{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 }
