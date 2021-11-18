@@ -1,2 +1,7 @@
-# oblig-3
-Oblig 3 for IDG1292 Webcoding
+This file contains exta information about this project.
+
+Created by: Gregor Boltz
+Date created: 11.2021
+Created for: Webcoding 1292 Oblig 3
+
+Link to live website: tbd
