@@ -26,18 +26,28 @@ body {
 
 h1, h2, h3 {
         font-family: 'openSans-Bold', sans-serif;
-    }
+}
 
-    h1 {
-        font-size: 4rem;
-        margin-bottom: 2rem;
-    }
+h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
 
-    h2 {
-        font-size: 2.2rem;
-        margin-bottom: 1rem;
-        font-weight: 800;
-    }
+h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    font-weight: 800;
+}
+
+/* css code for articles - that shouldn't be rows */
+.article{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-left: 0;
+}
+
 
 /* css code for navigation bar */
 nav {
@@ -96,8 +106,6 @@ main {
     flex-direction: column;
     text-align: left;
     justify-content: center;
-    left: 0;
-    right: 0;
 }
 
 main > div{
@@ -108,6 +116,8 @@ main div > img{
     max-width: 100%;
     padding-bottom: 1rem;
     object-fit: contain;
+    display: flex;
+    justify-content: center;
 }
 
 /* css code game page */
@@ -122,6 +132,7 @@ main div > img{
     max-width: 100%;
     padding: 1rem;
 }
+
 
 /* css code about page */
 
@@ -172,7 +183,7 @@ main form > input[type=submit] {
 
 /* footer */
 footer {
-    background-color: rgb(32, 158, 49);
+    background-color: #282828;
     max-width: 100%;
     margin: auto;
     color: #ffff;
@@ -223,18 +234,38 @@ footer > * {
     
     /* general css rulese */
     html {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     header, main{
         width: 70vw;
     }
 
+    .article > p, h2, ul{
+        text-align: left;
+        padding-left: 0;
+    }
+
     /* css code game page */
-    .game-explanation{
+    /* css code for images & text in the same row */
+    main > div{
+        display: flex;
+        flex-direction: row;
+    }
+    main div >p {
+        padding-left: 2rem;
+        display: flex;
+        justify-content: flex-end;
+    }   
+    
+    .about-article{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        flex: 2;
     }
+
+    .about-article > p{
+        padding-left: 0;
+    }
+
 }
