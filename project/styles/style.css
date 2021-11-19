@@ -39,7 +39,7 @@ h2 {
     font-weight: 800;
 }
 
-/* css code for articles - that shouldn't be rows */
+/* css code for articles - that shouldn't be rows (only applies when screens > 960px */
 .article{
     display: flex;
     flex-direction: column;
@@ -47,7 +47,6 @@ h2 {
     text-align: center;
     padding-left: 0;
 }
-
 
 /* css code for navigation bar */
 nav {
@@ -120,21 +119,11 @@ main div > img{
     justify-content: center;
 }
 
-/* css code game page */
-.game-explanation{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    text-align: center;
-}
-
-.game-explanation img{
-    max-width: 100%;
-    padding: 1rem;
-}
-
-
 /* css code about page */
+.about-article > p{
+    line-height: 2.5rem;
+    padding-left: 0;
+}
 
 /* css code contact page */
 main > form{
@@ -151,9 +140,9 @@ main form > textarea{
     box-sizing: border-box;
     border: 0.2rem solid #ccc;
     border-radius: 0.3rem;
-    background-color: #f8f8f8;
-    
+    background-color: #f8f8f8;   
 }
+
 main form > input[type=text], select {
     width: 100%;
     padding: 1rem;
@@ -174,12 +163,12 @@ main form > input[type=submit] {
     border-radius: 0.3rem;
     cursor: pointer;
     font-weight: 900;
-  }
+}
 
 /* changing color of button when hovered */
   main form > input[type=submit]:hover {
     background-color: rgb(18, 88, 27);
-  }
+}
 
 /* footer */
 footer {
@@ -198,6 +187,7 @@ footer > img{
     height: auto;
     padding: 2rem;
 }
+
 footer > div{
     padding: 0 2rem 2rem 2rem;
     text-align: center;
@@ -205,8 +195,8 @@ footer > div{
 
 .mapWrapper iframe {
     max-width: 80vh;
-    max-height: auto;
 }
+
 footer > * {
     margin: 0 auto;
 }
@@ -255,17 +245,12 @@ footer > * {
     main div >p {
         padding-left: 2rem;
         display: flex;
-        justify-content: flex-end;
     }   
     
+    /* css code for articles on about staying in one column */
     .about-article{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
     }
-
-    .about-article > p{
-        padding-left: 0;
-    }
-
 }
