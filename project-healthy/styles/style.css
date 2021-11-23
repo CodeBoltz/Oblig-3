@@ -15,7 +15,7 @@ html {
     font-size: 12px;
 }
 
-*{
+* {
     margin: 0;
 }
 
@@ -24,8 +24,10 @@ body {
     font-size: 1em;
 }
 
-h1, h2, h3 {
-        font-family: 'openSans-Bold', sans-serif;
+h1,
+h2,
+h3 {
+    font-family: 'openSans-Bold', sans-serif;
 }
 
 h1 {
@@ -40,7 +42,7 @@ h2 {
 }
 
 /* css code for articles - that shouldn't be rows (only applies when screens > 960px */
-.article{
+.article {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -50,7 +52,7 @@ h2 {
 
 /* css code for navigation bar */
 nav {
-    margin: 1rem ;
+    margin: 1rem;
     display: flex;
     justify-content: center;
 }
@@ -60,14 +62,14 @@ nav ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-  }
-  
-  nav li {
+}
+
+nav li {
     float: right;
     list-style-type: none;
-  }
-  
-  nav li a {
+}
+
+nav li a {
     font-family: 'openSans', sans-serif;
     font-weight: bold;
     display: block;
@@ -75,12 +77,12 @@ nav ul {
     text-align: center;
     text-decoration: none;
     padding: 1rem 0.5rem 1rem 0.5rem;
-  }
-  
-  li a:hover:not(.active) {
+}
+
+li a:hover:not(.active) {
     color: rgb(32, 158, 49);
-    text-decoration:underline #282828;
-  }
+    text-decoration: underline #282828;
+}
 
 /* css code header  */
 header {
@@ -89,9 +91,9 @@ header {
     margin: auto;
     display: flex;
     justify-content: center;
-    }
+}
 
-header > h1{
+header>h1 {
     font-size: 4rem;
     text-align: center;
     font-weight: 900;
@@ -99,7 +101,7 @@ header > h1{
 
 /* css code main */
 main {
-    width:85vw;
+    width: 85vw;
     margin: 0 auto 2rem auto;
     display: flex;
     flex-direction: column;
@@ -107,11 +109,11 @@ main {
     justify-content: center;
 }
 
-main > div{
+main>div {
     margin: 0 0 2rem 0;
 }
 
-main div > img{
+main div>img {
     max-width: 100%;
     padding-bottom: 1rem;
     object-fit: contain;
@@ -120,30 +122,31 @@ main div > img{
 }
 
 /* css code about page */
-.about-article > p{
+.about-article>p {
     line-height: 2.5rem;
     padding-left: 0;
 }
 
 /* css code contact page */
-main > form{
+main>form {
     display: flex;
     flex-direction: column;
     gap: 1rem;
     font-weight: 700;
 }
 
-main form > textarea{
+main form>textarea {
     width: 100%;
     height: auto;
     padding: 1rem;
     box-sizing: border-box;
     border: 0.2rem solid #ccc;
     border-radius: 0.3rem;
-    background-color: #f8f8f8;   
+    background-color: #f8f8f8;
 }
 
-main form > input[type=text], select {
+main form>input[type=text],
+select {
     width: 100%;
     padding: 1rem;
     margin: 1rem 0;
@@ -153,7 +156,7 @@ main form > input[type=text], select {
     box-sizing: border-box;
 }
 
-main form > input[type=submit] {
+main form>input[type=submit] {
     width: 100%;
     height: 3rem;
     background-color: rgb(32, 158, 49);
@@ -166,7 +169,7 @@ main form > input[type=submit] {
 }
 
 /* changing color of button when hovered */
-  main form > input[type=submit]:hover {
+main form>input[type=submit]:hover {
     background-color: rgb(18, 88, 27);
 }
 
@@ -181,14 +184,14 @@ footer {
     justify-content: center;
 }
 
-footer > img{
+footer>img {
     width: 100%;
     max-width: 20vh;
     height: auto;
     padding: 2rem;
 }
 
-footer > div{
+footer>div {
     padding: 0 2rem 2rem 2rem;
     text-align: center;
 }
@@ -197,7 +200,7 @@ footer > div{
     max-width: 80vh;
 }
 
-footer > * {
+footer>* {
     margin: 0 auto;
 }
 
@@ -209,46 +212,52 @@ footer > * {
         font-size: 14px;
     }
 
-    header, main{
+    header,
+    main {
         width: 80vw;
     }
 
-    footer{
+    footer {
         display: flex;
         flex-flow: column wrap;
         justify-content: center;
     }
 }
+
 /* css code for screens 960px and bigger */
 @media screen and (min-width: 960px) {
-    
+
     /* general css rulese */
     html {
         font-size: 26px;
     }
 
-    header, main{
+    header,
+    main {
         width: 70vw;
     }
 
-    .article > p, h2, ul{
+    .article>p,
+    h2,
+    ul {
         text-align: left;
         padding-left: 0;
     }
 
     /* css code game page */
     /* css code for images & text in the same row */
-    main > div{
+    main>div {
         display: flex;
         flex-direction: row;
     }
-    main div >p {
+
+    main div>p {
         padding-left: 2rem;
         display: flex;
-    }   
-    
+    }
+
     /* css code for articles on about staying in one column */
-    .about-article{
+    .about-article {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
