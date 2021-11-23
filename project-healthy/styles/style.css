@@ -50,8 +50,46 @@ h2 {
     padding-left: 0;
 }
 
-/* css code for navigation bar */
-nav {
+/* css code for navigation bar created with help of https://bit.ly/3nK4AV7 */
+#nav {
+    margin:  1rem 2rem 1rem 2rem;
+    background: white;
+}
+
+/* change items into vertical group */
+#items a {
+    box-sizing: border-box;
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 1rem 1rem 1rem;
+    font-family: 'openSans', sans-serif;
+    font-weight: bold;
+}
+
+/* show the hamburger icon */
+#nav label {
+    display: inline-block;
+    color: black;
+    font-size: 1.2em;
+    padding: 1rem;
+}
+
+/* toggle show/hide menu */
+#items {
+    display: none;
+}
+
+#nav input:checked~#items {
+    display: block;
+}
+
+/* hiding the checkbox */
+nav>input {
+    display: none;
+}
+
+/* nav {
     margin: 1rem;
     display: flex;
     justify-content: center;
@@ -82,7 +120,7 @@ nav li a {
 li a:hover:not(.active) {
     color: rgb(32, 158, 49);
     text-decoration: underline #282828;
-}
+} */
 
 /* css code header  */
 header {
@@ -221,6 +259,36 @@ footer>* {
         display: flex;
         flex-flow: column wrap;
         justify-content: center;
+    }
+
+    /* code for nav bar */
+    #nav {
+        margin: 1rem;
+    }
+
+    /* items in menu */
+    #items {
+        display: flex;
+    }
+
+    #items a {
+        flex-grow: 1;
+        flex-basis: 0;
+        padding: 1rem 0.5rem 1rem 0.5rem;
+        color: black;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    #items a:hover {
+        color: rgb(32, 158, 49);
+        text-decoration: underline #282828;
+    }
+
+    /* hiden menu */
+    #nav label,
+    #hamburger {
+        display: none;
     }
 }
 
