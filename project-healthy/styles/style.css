@@ -12,7 +12,7 @@
 /* css code for screen size < 600px*/
 /* general css */
 html {
-    font-size: 12px;
+    font-size: 14px;
 }
 
 * {
@@ -21,7 +21,9 @@ html {
 
 body {
     font-family: 'Lato', sans-serif;
-    font-size: 1em;
+    font-size: 1.4em;
+    width: 100%;
+    height: 100%;
 }
 
 h1,
@@ -52,7 +54,7 @@ h2 {
 
 /* css code for navigation bar created with help of https://bit.ly/3nK4AV7 */
 #nav {
-    margin:  1rem 2rem 1rem 2rem;
+    margin: 0 2rem 1rem 2rem;
     background: white;
 }
 
@@ -215,7 +217,7 @@ main form>input[type=submit]:hover {
 footer {
     background-color: #282828;
     max-width: 100%;
-    margin: auto;
+    margin: 0;
     color: #ffff;
     display: flex;
     flex-flow: row wrap;
@@ -234,13 +236,17 @@ footer>div {
     text-align: center;
 }
 
+footer div > iframe{
+    padding: 0;
+}
+
 .mapWrapper iframe {
     max-width: 80vh;
 }
 
-footer>* {
+/* footer>* {
     margin: 0 auto;
-}
+} */
 
 /* css code for screens 600px and bigger*/
 @media screen and (min-width: 600px) {
