@@ -224,21 +224,23 @@ footer {
     justify-content: center;
 }
 
-footer>img {
+footer div >img {
     width: 100%;
     max-width: 20vh;
     height: auto;
-    padding: 2rem;
+    padding-top: 1rem;
 }
 
 footer>div {
-    padding: 0 2rem 2rem 2rem;
+    padding: 0 0 1rem 0;
     text-align: center;
 }
 
 footer div > iframe{
     padding: 0;
 }
+
+
 
 .mapWrapper iframe {
     max-width: 80vh;
