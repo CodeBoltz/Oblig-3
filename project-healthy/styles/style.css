@@ -74,7 +74,7 @@ nav ul {
     color: #282828;
     text-align: center;
     text-decoration: none;
-    padding: 2rem 1rem 1rem 1rem;
+    padding: 1rem 0.5rem 1rem 0.5rem;
   }
   
   li a:hover:not(.active) {
