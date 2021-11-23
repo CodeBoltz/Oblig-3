@@ -12,7 +12,7 @@
 /* css code for screen size < 600px*/
 /* general css */
 html {
-    font-size: 14px;
+    font-size: 12px;
 }
 
 *{
@@ -21,7 +21,7 @@ html {
 
 body {
     font-family: 'Lato', sans-serif;
-    font-size: 1.4em;
+    font-size: 1em;
 }
 
 h1, h2, h3 {
@@ -74,7 +74,7 @@ nav ul {
     color: #282828;
     text-align: center;
     text-decoration: none;
-    padding: 2rem 2rem;
+    padding: 2rem 1rem 1rem 1rem;
   }
   
   li a:hover:not(.active) {
@@ -206,7 +206,7 @@ footer > * {
 
     /* general css rules */
     html {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     header, main{
@@ -224,7 +224,7 @@ footer > * {
     
     /* general css rulese */
     html {
-        font-size: 20px;
+        font-size: 26px;
     }
 
     header, main{
