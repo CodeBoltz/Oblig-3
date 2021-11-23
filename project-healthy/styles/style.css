@@ -269,7 +269,7 @@ footer div > iframe{
 
     /* code for nav bar */
     #nav {
-        margin: 1rem;
+        margin: 0 2rem 1rem 2rem;
     }
 
     /* items in menu */
