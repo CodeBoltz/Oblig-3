@@ -43,7 +43,7 @@ h2 {
     font-weight: 800;
 }
 
-/* css code for articles - that shouldn't be rows (only applies when screens > 960px */
+/* css code for articles - that shouldn't be rows (only applies when screens > 960px) */
 .article {
     display: flex;
     flex-direction: column;
@@ -90,39 +90,6 @@ h2 {
 nav>input {
     display: none;
 }
-
-/* nav {
-    margin: 1rem;
-    display: flex;
-    justify-content: center;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-nav li {
-    float: right;
-    list-style-type: none;
-}
-
-nav li a {
-    font-family: 'openSans', sans-serif;
-    font-weight: bold;
-    display: block;
-    color: #282828;
-    text-align: center;
-    text-decoration: none;
-    padding: 1rem 0.5rem 1rem 0.5rem;
-}
-
-li a:hover:not(.active) {
-    color: rgb(32, 158, 49);
-    text-decoration: underline #282828;
-} */
 
 /* css code header  */
 header {
@@ -224,7 +191,7 @@ footer {
     justify-content: center;
 }
 
-footer div >img {
+footer div>img {
     width: 100%;
     max-width: 20vh;
     height: auto;
@@ -236,19 +203,13 @@ footer>div {
     text-align: center;
 }
 
-footer div > iframe{
+footer div>iframe {
     padding: 0;
 }
-
-
 
 .mapWrapper iframe {
     max-width: 80vh;
 }
-
-/* footer>* {
-    margin: 0 auto;
-} */
 
 /* css code for screens 600px and bigger*/
 @media screen and (min-width: 600px) {
@@ -305,7 +266,7 @@ footer div > iframe{
 
     /* general css rulese */
     html {
-        font-size: 26px;
+        font-size: 16px;
     }
 
     header,
